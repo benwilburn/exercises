@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!---
+
+-Applicant first name done √
+-Applicant middle initial √
+-Applicant last name √
+-Applicant address √
+-Applicant occupation √
+-Applicant employer √
+-Employer address √
+-Type of loan select element with these options: √
+-Commercial √
+-Real estate √
+-Personal √
+-Mortgage √
+-Requested amount of loan √
+-Radio button elements for loan length √
+-5 years √
+-15 years √
+-30 years √
+-Checkbox group for special conditions √
+-I have a down payment √
+-Out-of-state resident √
+-Married √
+-Loan will be co-signed √
+-A text area to allow for additional comments √
+-Applicant email address
+-Applicant telephone number
+-Applicant LinkedIn URL
+
+
+-->
+
+
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Banking Form</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<header>
+		<h1>
+			<strong>
+				Banking Form: Loan Application
+			</strong>
+		</h1>
+	</header>
+	<artcile>
+		<form action="index.html" method="post" accept-charst="utf-8">
+			<fieldset>
+				<label for="Name-and-Address">Name & Address</label>
+				<legend>Personal Information</legend>
+				<div>
+					<input type="text" name="first-name" placeholder="First Name">
+				</div>
+				<div>
+					<input type="text" name="middle-initial" placeholder="Middle Initial">
+				</div>
+				<div>
+					<input type="text" name="last-name" placeholder="Last Name">
+				</div>
+				<div>
+					<input type="text" name="address" placeholder="Your Home Address">
+				</div>
+				<div>
+					<input type="text" name="city" placeholder="City">
+				</div>
+				<div>
+					<input type="text" name="state" placeholder="State">
+				</div>
+				<div>
+					<input type="text" name="zip-code" placeholder="Zip Code">
+				</div>
+			</fieldset>
+			<fieldset>
+				<label for="employment-information">Employment Information</label>
+				<legend>Occupation</legend>
+				<div>
+					<input type="text" name="job-title" placeholder="Job Title">
+				</div>
+				<div>
+					<input type="text" name="employer" placeholder="Employer or Place of Employment">
+				</div>
+				<div>
+					<input type="text" name="employer-address" placeholder="Employer Address">
+				</div>
+			</fieldset>
+			<fieldset>
+				<label for="Loan-type">Loan Type</label>
+				<legend>Select a Category</legend>
+				<select name="Type of Loan">
+					<option value="Select-One">Select One</option>
+					<option value="Personal">Personal</option>
+					<option value="Mortgage">Mortgage</option>
+					<option value="Personal">Real Estate</option>
+					<option value="Personal">Commercial</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<label for="duration">Duration</label>
+				<legend>Length of Loan</legend>
+				<input type="radio" name="loan-length" value="5 Years" checked="checked"> 5 Years
+				<input type="radio" name="loan-length" value="15 Years"> 15 Years
+				<input type="radio" name="loan-length" value="30 Years"> 30 Years
+			</fieldset>
+			<fieldset>
+				<label for="Considerations">Considerations</label>
+				<legend>Special Conditions</legend>
+				<input type="checkbox" name="special-conditions" value="I have a down payment"> I have a down payment
+				<input type="checkbox" name="special-condtions" value="Out-of-State Resident"> Out-of-state Resident
+				<input type="checkbox" name="special-conditions" value="Married"> Married
+				<input type="checkbox" name="special-conditions" value="Loan will have a co-signer"> Loan will have a co-signer
+			</fieldset>
+			<fieldset>
+				<label for="Comments">Comments</label>
+				<legend>Additional Information</legend>
+				<textarea name="Comments" rows="10" cols="20">Anything else you want you want us to know?</textarea>
+			</fieldset>
+			<fieldset>
+				<label for="Contact-info">Fill all possible fields</label>
+				<legend>Contact Information</legend>
+				<div>
+					<input type="text" name="email-address" placeholder="Email Address">
+				</div>
+				<div>
+					<input type="text" name="telephone-number" placeholder="Telephone Number">
+				</div>
+				<div>
+					<input type="text" name="LinkedIn-URL" placeholder="LinkedIn URL">
+				</div>
+			</fieldset>
+			<input type="submit" value="Submit Application">
+		</form>
+	</artcile>
+	<footer>
+	</footer>
+
+</body>
+</html>
